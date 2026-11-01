@@ -1,7 +1,122 @@
+import '../css/profile.css'
+
 export function Profile() {
   return (
     <>
-      <div>Welcome - You have made it to the profile page</div>
+      <div class="order-section">
+        <div class="page-header">
+          <h2>Customer Name</h2>
+          <h3>Manage Your Profile</h3>
+        </div>
+        <div class="profile-container">
+          <form method="POST">
+            <div class="form-inner">
+              <div class="form-group">
+                <label for="firstname">
+                  Firstname
+                  <span class="required">*</span>
+                </label>
+                <input
+                  id="firstname"
+                  name="firstname"
+                  type="text"
+                  value="John"
+                  title="Firstname"
+                  placeholder="Firstname"
+                  aria-label="Firstname"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastname">
+                  Lastname
+                  <span class="required">*</span>
+                </label>
+                <input
+                  id="lastname"
+                  name="lastname"
+                  type="text"
+                  value="Doe"
+                  title="Lastname"
+                  placeholder="Lastname"
+                  aria-label="Lastname"
+                />
+              </div>
+              <div class="form-group">
+                <label for="address1">
+                  First address line
+                  <span class="required">*</span>
+                </label>
+                <input
+                  id="address1"
+                  name="address1"
+                  type="text"
+                  value="123 Street"
+                  title="First address line"
+                  placeholder="First address line"
+                  aria-label="First address line"
+                />
+              </div>
+              <div class="form-group">
+                <label for="address2">Second address line</label>
+                <input
+                  id="address2"
+                  name="address2"
+                  type="text"
+                  title="Second address line"
+                  placeholder="Second address line"
+                  aria-label="Second address line"
+                />
+              </div>
+              <div class="form-group">
+                <label for="postcode">
+                  Postcode
+                  <span class="required">*</span>
+                </label>
+                <input
+                  id="postcode"
+                  name="postcode"
+                  type="text"
+                  value="AB12CD"
+                  title="Postcode"
+                  placeholder="Postcode"
+                  aria-label="Postcode"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email - view only</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value="john.doe@mail.com"
+                  disabled
+                  title="Email (view only)"
+                  placeholder="Email"
+                  aria-label="Email (view only)"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">
+                  Phone
+                  <span class="required">*</span>
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value="06701234567"
+                  title="Phone"
+                  placeholder="Phone number"
+                  aria-label="Phone number"
+                />
+              </div>
+            </div>
+            <button type="submit" class="button-primary">
+              Update My Profile
+            </button>
+          </form>
+        </div>
+      </div>
     </>
   )
 }
