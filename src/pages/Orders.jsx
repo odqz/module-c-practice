@@ -1,6 +1,17 @@
+import { useNavigate } from 'react-router-dom'
 import '../css/orders.css'
+import { API } from '../Api'
 
 export function Orders() {
+    const nav = useNavigate()
+
+    API.get('/auth/me')
+    .catch(err => {
+      console.log(err)
+      nav('/login')
+    })
+
+
   return (
     <>
       <div class="order-section">

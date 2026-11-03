@@ -95,7 +95,7 @@ export function Register() {
             {/* <!-- Footer --> */}
             <div class="register-footer">
               <p>Already have an account with us?</p>
-              <a href="login.html" class="login-link">Login Now!</a>
+              <a href="/login" class="login-link">Login Now!</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,20 @@
+import { useNavigate } from 'react-router-dom'
+import { API } from '../Api'
 import '../css/profile.css'
+import { useState } from 'react'
 
 export function Profile() {
+    const [user, setUser] = useState({})
+    const nav = useNavigate()
+
+    API.get('/auth/me')
+    .then(res => setUser(res.data))
+    .catch(err => {
+      console.log(err)
+      nav('/login')
+    })
+
+
   return (
     <>
       <div class="order-section">
