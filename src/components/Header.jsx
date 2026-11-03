@@ -2,34 +2,34 @@ export function Header() {
   return (
     <>
       {/* <!-- Header --> */}
-      <header class="header">
-        <div class="header-inner">
-          <h1 class="logo">
-            <span class="logo-img">
+      <header className="header">
+        <div className="header-inner">
+          <h1 className="logo">
+            <span className="logo-img">
               <img src="../images/logo.svg" alt="Spark Studios logo" />
             </span>
             Spark Studios
           </h1>
 
-          <nav class="nav">
+          <nav className="nav">
             <ul>
-              <li><a href="/" class="nav-link">Events</a></li>
+              <li><a href="/" className="nav-link">Events</a></li>
 
               {/* <!-- show only when logged out --> */}
-              <li><a href="/login" class="nav-link">Login</a></li>
+              <li><a href="/login" className="nav-link">Login</a></li>
 
               {/* <!-- show only when logged in --> */}
-              <li><a href="/profile" class="nav-link">Profile</a></li>
-              <li class="basket-link">
-                <a href="/basket" class="nav-link">
+              <li><a href="/profile" className="nav-link">Profile</a></li>
+              <li className="basket-link">
+                <a href="/basket" className="nav-link">
                   Basket
-                  <span class="basket-count">0</span>
+                  <span className="basket-count">0</span>
                 </a>
               </li>
-              <li><a href="/logout" class="nav-link">Logout</a></li>
+              <li><a href="/logout" className="nav-link">Logout</a></li>
               
               {/* <!-- always visible --> */}
-              <li><a href="/register" class="nav-link">Register</a></li>
+              <li><a href="/register" className="nav-link">Register</a></li>
             </ul>
           </nav>
         </div>
