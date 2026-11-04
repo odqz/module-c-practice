@@ -1,16 +1,6 @@
-import { useNavigate } from 'react-router-dom'
-import { API } from '../Api'
 import '../css/events.css'
 
 export function Events() {
-  const nav = useNavigate()
-
-  API.get('/auth/me')
-  .catch(err => {
-    console.log(err)
-    nav('/login')
-  })
-
   return (
     <>
       {/* <!-- Events Section --> */}

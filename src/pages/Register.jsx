@@ -1,6 +1,17 @@
+import { useState } from 'react'
 import '../css/auth.css'
+import { API } from '../Api'
 
 export function Register() {
+  // const [user, setUser] = useState({})
+  const [firstname, setFirstname] = useState('')
+  const [lastname, setLastname] = useState('')
+  const [firstAddressLine, setFirstAddressLine] = useState('')
+  const [, set] = useState('')
+  const [, set] = useState('')
+
+  API.post('/users/add', {})
+
   return (
     <>
       <div class="register-page">
